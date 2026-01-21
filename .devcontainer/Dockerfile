@@ -1,8 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/python:3.10
 
-# Install system packages
+# Install system tools (NO Java here)
 RUN apt-get update && apt-get install -y \
-    openjdk-17-jdk \
     wget \
     curl \
     vim \
