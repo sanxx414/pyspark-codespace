@@ -13,10 +13,11 @@ RUN apt-get update && apt-get install -y \
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 # Install Spark
-RUN wget https://downloads.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz && \
-    tar -xvzf spark-3.5.1-bin-hadoop3.tgz && \
+RUN wget https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz && \
+    tar -xzf spark-3.5.1-bin-hadoop3.tgz && \
     mv spark-3.5.1-bin-hadoop3 /opt/spark && \
     rm spark-3.5.1-bin-hadoop3.tgz
+
 
 # Spark environment
 ENV SPARK_HOME=/opt/spark
