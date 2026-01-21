@@ -6,7 +6,9 @@ RUN apt-get update && apt-get install -y \
     wget \
     curl \
     vim \
+    git-lfs \
     && rm -rf /var/lib/apt/lists/*
+
 
 # Java environment
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
