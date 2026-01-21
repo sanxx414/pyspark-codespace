@@ -1,0 +1,6 @@
+{
+  "name": "PySpark Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
