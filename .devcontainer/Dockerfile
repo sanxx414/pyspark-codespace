@@ -1,16 +1,15 @@
-# Base image with Python
 FROM mcr.microsoft.com/devcontainers/python:3.10
 
 # Install system packages
 RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk \
+    openjdk-17-jdk \
     wget \
     curl \
     vim \
     && rm -rf /var/lib/apt/lists/*
 
 # Java environment
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 # Install Spark
 RUN wget https://downloads.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz && \
