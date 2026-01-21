@@ -24,4 +24,4 @@ ENV SPARK_HOME=/opt/spark
 ENV PATH=$PATH:$SPARK_HOME/bin
 
 # PySpark
-RUN pip install pyspark
+#RUN pip install pyspark
