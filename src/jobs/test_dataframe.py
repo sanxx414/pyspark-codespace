@@ -11,7 +11,7 @@ df = (
     spark.read
     .option("header", "true")
     .option("inferSchema", "true")
-    .csv("data/sales_data_first.csv")
+    .csv("/workspaces/pyspark-codespace/data/sales_data_first.csv")
 )
 
 df.show()
